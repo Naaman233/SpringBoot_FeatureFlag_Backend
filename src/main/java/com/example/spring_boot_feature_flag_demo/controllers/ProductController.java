@@ -40,7 +40,7 @@ public class ProductController {
     }
 
     
-    @GetMapping("/products")
+    @GetMapping("/inventory")
     public List<Products> getProducts() {
         List<Products> products = productRepository.findAll();
 
