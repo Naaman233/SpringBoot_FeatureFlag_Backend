@@ -7,6 +7,8 @@ import jakarta.persistence.GenerationType;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.Builder;
+import lombok.AllArgsConstructor;
 
 import java.time.LocalDateTime;
 import java.math.BigDecimal;
@@ -14,6 +16,8 @@ import java.math.BigDecimal;
 @Entity
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
 
 public class Products {
     @Id

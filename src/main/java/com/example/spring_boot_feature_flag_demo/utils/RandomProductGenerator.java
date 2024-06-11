@@ -55,7 +55,7 @@ public class RandomProductGenerator {
         return builder.toString();
     }
 
-    private static BigDecimal generateRandomPrice() {
+    public static BigDecimal generateRandomPrice() {
         double price = 10.0 + (999.0 * random.nextDouble());
         return BigDecimal.valueOf(price).setScale(2, RoundingMode.HALF_UP);
     }
